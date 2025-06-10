@@ -1,368 +1,114 @@
-            <div class="text-2xl font-bold text-green-400">10 Prefeituras</div>
-                            <div class="text-gray-400 text-sm">Receita: R$ 1.200k/ano</div>
-                            <div class="text-white font-semibold">Lucro: R$ 960k/ano</div>
-                        </div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de IA para Planos de Aula BNCC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bg-texture {
+            background-image: url('./Fundo_verde.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        html { scroll-behavior: smooth; }
+        .gradient-text {
+            background: linear-gradient(135deg, #ffffff 0%, #4ade80 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(74, 222, 128, 0.15);
+        }
+        .feature-card {
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(74, 222, 128, 0.2);
+            background: rgba(17, 24, 39, 0.8);
+        }
+        .glassmorphism {
+            backdrop-filter: blur(16px) saturate(180%);
+            background-color: rgba(17, 24, 39, 0.75);
+            border: 1px solid rgba(74, 222, 128, 0.125);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Background -->
+    <div class="fixed inset-0 z-0 bg-texture">
+        <div class="absolute inset-0 bg-gray-900 bg-opacity-70"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 glassmorphism border-b border-green-400 border-opacity-20">
+        <div class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-6">
+                <div class="flex items-center space-x-3">
+                    <img src="./logo notecraft.jpg" alt="Notecraft Logo" class="w-10 h-10 rounded-lg object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="w-10 h-10 bg-gradient-to-br from-green-400 to-emerald-400 rounded-lg flex items-center justify-center" style="display:none;">
+                        <span class="text-gray-900 font-bold text-lg">N</span>
                     </div>
+                    <span class="text-white text-lg font-semibold">Notecraft</span>
+                </div>
+                <div class="flex items-center space-x-3 text-green-400">
+                    <span class="text-2xl">∞</span>
+                    <span class="text-gray-400 text-sm">em parceria com</span>
+                </div>
+                <div class="text-white text-lg font-bold tracking-wider">ALIACODE</div>
+            </div>
+            <nav class="hidden lg:flex space-x-6">
+                <a href="#hero" class="px-3 py-2 rounded-lg text-sm text-gray-400 hover:text-green-400 transition-colors">Início</a>
+                <a href="#context" class="px-3 py-2 rounded-lg text-sm text-gray-400 hover:text-green-400 transition-colors">Mercado</a>
+                <a href="#solution" class="px-3 py-2 rounded-lg text-sm text-gray-400 hover:text-green-400 transition-colors">Solução</a>
+                <a href="#investment" class="px-3 py-2 rounded-lg text-sm text-gray-400 hover:text-green-400 transition-colors">Investimento</a>
+                <a href="#faq" class="px-3 py-2 rounded-lg text-sm text-gray-400 hover:text-green-400 transition-colors">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" class="min-h-screen flex items-center justify-center relative z-10 pt-20">
+        <div class="absolute inset-0 z-0 opacity-30">
+            <img src="./professor_ai" alt="Profissional trabalhando com IA" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-8 text-center relative z-10">
+            <div class="inline-flex items-center space-x-2 glassmorphism px-6 py-3 rounded-full mb-8">
+                <span class="text-green-400 text-sm font-medium">Liberdade através da IA na Educação</span>
+            </div>
+            <h1 class="text-6xl lg:text-7xl font-bold mb-8 gradient-text leading-tight">
+                Plataforma de IA para<br>
+                <span class="text-green-400">Planos de Aula BNCC</span>
+            </h1>
+            <p class="text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto mb-12">
+                Análise de oportunidade estratégica para expansão no mercado educacional. Uma solução que otimiza o tempo dos professores enquanto garante alinhamento total com a Base Nacional Comum Curricular.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
+                <div class="feature-card rounded-xl p-6 card-hover">
+                    <h3 class="text-white font-semibold mb-2">Tempo é Valor</h3>
+                    <p class="text-gray-400 text-sm">Professores economizam horas na criação de planos</p>
+                </div>
+                <div class="feature-card rounded-xl p-6 card-hover">
+                    <h3 class="text-white font-semibold mb-2">BNCC Nativo</h3>
+                    <p class="text-gray-400 text-sm">API dedicada garantindo alinhamento total</p>
+                </div>
+                <div class="feature-card rounded-xl p-6 card-hover">
+                    <h3 class="text-white font-semibold mb-2">Segurança Total</h3>
+                    <p class="text-gray-400 text-sm">LGPD-ready com infraestrutura corporativa</p>
                 </div>
             </div>
+            <button onclick="document.getElementById('context').scrollIntoView({behavior: 'smooth'})" class="bg-gradient-to-r from-green-400 to-emerald-400 text-gray-900 px-10 py-4 rounded-xl font-semibold text-lg hover:scale-105 transition-all duration-300">
+                Explorar Oportunidade
+            </button>
         </div>
     </section>
 
-    <!-- FAQ -->
-    <section id="faq" class="py-20 relative z-10">
-        <div class="max-w-7xl mx-auto px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-white mb-6">Perguntas Estratégicas</h2>
-                <div class="w-24 h-1 bg-green-400 mx-auto"></div>
-            </div>
-
-            <!-- FAQ Categories -->
-            <div class="flex flex-wrap justify-center gap-4 mb-8">
-                <button onclick="showFAQCategory('financial')" id="faq-btn-financial" class="px-6 py-3 rounded-lg transition-all duration-300 bg-green-400 bg-opacity-20 text-green-400 border border-green-400 border-opacity-50">
-                    Aspectos Financeiros
-                </button>
-                <button onclick="showFAQCategory('risk')" id="faq-btn-risk" class="px-6 py-3 rounded-lg transition-all duration-300 text-gray-400 hover:text-white glassmorphism">
-                    Gestão de Riscos
-                </button>
-                <button onclick="showFAQCategory('operational')" id="faq-btn-operational" class="px-6 py-3 rounded-lg transition-all duration-300 text-gray-400 hover:text-white glassmorphism">
-                    Operacionais
-                </button>
-                <button onclick="showFAQCategory('partnership')" id="faq-btn-partnership" class="px-6 py-3 rounded-lg transition-all duration-300 text-gray-400 hover:text-white glassmorphism">
-                    Parceria
-                </button>
-            </div>
-
-            <!-- Financial FAQ -->
-            <div id="faq-financial" class="faq-category active glassmorphism rounded-2xl p-8">
-                <h3 class="text-2xl font-semibold text-green-400 mb-8">Aspectos Financeiros</h3>
-                <div class="space-y-4">
-                    <div class="faq-item">
-                        <button onclick="toggleFAQ(0)" class="w-full text-left p-6 bg-green-400 bg-opacity-5 hover:bg-opacity-10 transition-all duration-300 flex justify-between items-center border border-green-400 border-opacity-20 rounded-xl">
-                            <span class="text-white font-semibold text-lg pr-4">E se eu só conseguir vender por R$ 80k? Ainda compensa?</span>
-                            <span id="faq-icon-0" class="text-green-400 text-2xl">▼</span>
-                        </button>
-                        <div id="faq-content-0" class="faq-content overflow-hidden">
-                            <div class="p-6 pt-0">
-                                <div class="border-l-4 border-green-400 border-opacity-50 pl-6">
-                                    <p class="text-gray-200 leading-relaxed">Claro que compensa! R$ 80k é um preço bem conservador - na verdade, bastante modesto considerando que estamos falando de tecnologia de IA conversacional única no mercado. Você ainda mantém uma margem saudável mesmo nesse cenário. A realidade é que a maioria das prefeituras reconhece o valor diferenciado quando veem a demonstração da IA funcionando. Sistemas sem IA já custam bem mais que isso.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button onclick="toggleFAQ(1)" class="w-full text-left p-6 bg-green-400 bg-opacity-5 hover:bg-opacity-10 transition-all duration-300 flex justify-between items-center border border-green-400 border-opacity-20 rounded-xl">
-                            <span class="text-white font-semibold text-lg pr-4">Como fica se a prefeitura atrasar o pagamento?</span>
-                            <span id="faq-icon-1" class="text-green-400 text-2xl">▼</span>
-                        </button>
-                        <div id="faq-content-1" class="faq-content">
-                            <div class="p-6 pt-0">
-                                <div class="border-l-4 border-green-400 border-opacity-50 pl-6">
-                                    <p class="text-gray-200 leading-relaxed">Incluímos cláusula de proteção: se o pagamento atrasar mais de 60 dias, podemos pausar temporariamente o SLA até a regularização. Contratos públicos têm maior previsibilidade que o setor privado. Além disso, o sistema continua funcionando para os professores - apenas suspendemos atualizações e suporte técnico.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button onclick="toggleFAQ(2)" class="w-full text-left p-6 bg-green-400 bg-opacity-5 hover:bg-opacity-10 transition-all duration-300 flex justify-between items-center border border-green-400 border-opacity-20 rounded-xl">
-                            <span class="text-white font-semibold text-lg pr-4">O SLA mensal pode ter reajuste?</span>
-                            <span id="faq-icon-2" class="text-green-400 text-2xl">▼</span>
-                        </button>
-                        <div id="faq-content-2" class="faq-content">
-                            <div class="p-6 pt-0">
-                                <div class="border-l-4 border-green-400 border-opacity-50 pl-6">
-                                    <p class="text-gray-200 leading-relaxed">O valor base permanece fixo por 24 meses. Reajustes seguem índices oficiais (IPCA) e acontecem anualmente. O escalonamento por volume de prefeituras é automático e transparente - quanto mais você vende, melhor a economia de escala.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button onclick="toggleFAQ(3)" class="w-full text-left p-6 bg-green-400 bg-opacity-5 hover:bg-opacity-10 transition-all duration-300 flex justify-between items-center border border-green-400 border-opacity-20 rounded-xl">
-                            <span class="text-white font-semibold text-lg pr-4">Posso pausar SLA se cancelarem contrato?</span>
-                            <span id="faq-icon-3" class="text-green-400 text-2xl">▼</span>
-                        </button>
-                        <div id="faq-content-3" class="faq-content">
-                            <div class="p-6 pt-0">
-                                <div class="border-l-4 border-green-400 border-opacity-50 pl-6">
-                                    <p class="text-gray-200 leading-relaxed">Sim. O SLA é proporcional aos contratos ativos. Se uma prefeitura cancelar, o escalonamento se ajusta automaticamente. O valor base cobre infraestrutura geral, mas componentes variáveis diminuem conforme o número de municípios ativos.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Risk FAQ -->
-            <div id="faq-risk" class="faq-category glassmorphism rounded-2xl p-8">
-                <h3 class="text-2xl font-semibold text-green-400 mb-8">Gestão de Riscos</h3>
-                <div class="space-y-4">
-                    <div class="faq-item">
-                        <button onclick="toggleFAQ(4)" class="w-full text-left p-6 bg-green-400 bg-opacity-5 hover:bg-opacity-10 transition-all duration-300 flex justify-between items-center border border-green-400 border-opacity-20 rounded-xl">
-                            <span class="text-white font-semibold text-lg pr-4">E se vocês pararem de dar suporte?</span>
-                            <span id="faq-icon-4" class="text-green-400 text-2xl">▼</span>
-                        </button>
-                        <div id="faq-content-4" class="faq-content">
-                            <div class="p-6 pt-0">
-                                <div class="border-l-4 border-green-400 border-opacity-50 pl-6">
-                                    <p class="text-gray-200 leading-relaxed">No modelo tradicional, você recebe todo o código-fonte e documentação técnica. No modelo parceria, temos interesse mútuo no sucesso - nossa receita depende do seu. O sistema roda em infraestrutura padrão (AWS/Azure), facilitando migração se necessário. Há cláusulas contratuais de transição assistida.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button onclick="toggleFAQ(5)" class="w-full text-left p-6 bg-green-400 bg-opacity-5 hover:bg-opacity-10 transition-all duration-300 flex justify-between items-center border border-green-400 border-opacity-20 rounded-xl">
-                            <span class="text-white font-semibold text-lg pr-4">A IA pode ficar obsoleta?</span>
-                            <span id="faq-icon-5" class="text-green-400 text-2xl">▼</span>
-                        </button>
-                        <div id="faq-content-5" class="faq-content">
-                            <div class="p-6 pt-0">
-                                <div class="border-l-4 border-green-400 border-opacity-50 pl-6">
-                                    <p class="text-gray-200 leading-relaxed">Nossa arquitetura é agnóstica - podemos trocar o motor de IA conforme evolução do mercado, sem mexer na interface do usuário. Atualizações contínuas fazem parte do SLA. O valor está na API BNCC e na experiência do usuário, não apenas no motor de IA.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button onclick="toggleFAQ(6)" class="w-full text-left p-6 bg-green-400 bg-opacity-5 hover:bg-opacity-10 transition-all duration-300 flex justify-between items-center border border-green-400 border-opacity-20 rounded-xl">
-                            <span class="text-white font-semibold text-lg pr-4">Como migrar dados se der problema?</span>
-                            <span id="faq-icon-6" class="text-green-400 text-2xl">▼</span>
-                        </button>
-                        <div id="faq-content-6" class="faq-content">
-                            <div class="p-6 pt-0">
-                                <div class="border-l-4 border-green-400 border-opacity-50 pl-6">
-                                    <p class="text-gray-200 leading-relaxed">Dados ficam em formato padrão (JSON/SQL), sem vendor lock-in. Fornecemos APIs de exportação e documentação completa. No modelo tradicional, você tem acesso total aos dados desde o início. Backups diários ficam disponíveis por 12 meses após cancelamento.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button onclick="toggleFAQ(7)" class="w-full text-left p-6 bg-green-400 bg-opacity-5 hover:bg-opacity-10 transition-all duration-300 flex justify-between items-center border border-green-400 border-opacity-20 rounded-xl">
-                            <span class="text-white font-semibold text-lg pr-4">E se aparecer concorrente mais barato?</span>
-                            <span id="faq-icon-7" class="text-green-400 text-2xl">▼</span>
-                        </button>
-                        <div id="faq-content-7" class="faq-content">
-                            <div class="p-6 pt-0">
-                                <div class="border-l-4 border-green-400 border-opacity-50 pl-6">
-                                    <p class="text-gray-200 leading-relaxed">Você terá vantagem de pioneiro e relacionamento estabelecido. A barreira técnica para replicar IA conversacional + API BNCC é alta (18-24 meses). Mais importante: você conhece as necessidades dos clientes e pode evoluir mais rápido que novos entrantes.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Operational FAQ -->
-            <div id="faq-operational" class="faq-category glassmorphism rounded-2xl p-8">
-                <h3 class="text-2xl font-semibold text-green-400 mb-8">Operacionais</h3>
-                <div class="space-y-4">
-                    <div class="faq-item">
-                        <button onclick="toggleFAQ(8)" class="w-full text-left p-6 bg-green-400 bg-opacity-5 hover:bg-opacity-10 transition-all duration-300 flex justify-between items-center border border-green-400 border-opacity-20 rounded-xl">
-                            <span class="text-white font-semibold text-lg pr-4">Quanto tempo para implementar em nova prefeitura?</span>
-                            <span id="faq-icon-8" class="text-green-400 text-2xl">▼</span>
-                        </button>
-                        <div id="faq-content-8" class="faq-content">
-                            <div class="p-6 pt-0">
-                                <div class="border-l-4 border-green-400 border-opacity-50 pl-6">
-                                    <p class="text-gray-200 leading-relaxed">3-5 dias úteis para configuração técnica completa. Inclui: criação do ambiente isolado, importação da estrutura educacional da prefeitura, treinamento da equipe pedagógica e testes de homologação. É mais rápido que qualquer concorrente.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button onclick="toggleFAQ(9)" class="w-full text-left p-6 bg-green-400 bg-opacity-5 hover:bg-opacity-10 transition-all duration-300 flex justify-between items-center border border-green-400 border-opacity-20 rounded-xl">
-                            <span class="text-white font-semibold text-lg pr-4">O sistema aguenta quantos professores simultâneos?</span>
-                            <span id="faq-icon-9" class="text-green-400 text-2xl">▼</span>
-                        </button>
-                        <div id="faq-content-9" class="faq-content">
-                            <div class="p-6 pt-0">
-                                <div class="border-l-4 border-green-400 border-opacity-50 pl-6">
-                                    <p class="text-gray-200 leading-relaxed">Arquitetura suporta 50.000+ usuários simultâneos sem degradação. Auto-scaling automático durante picos de uso (início de bimestre, planejamento anual). Testado em simulações de carga com picos de 1.000 professores criando planos simultaneamente.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button onclick="toggleFAQ(10)" class="w-full text-left p-6 bg-green-400 bg-opacity-5 hover:bg-opacity-10 transition-all duration-300 flex justify-between items-center border border-green-400 border-opacity-20 rounded-xl">
-                            <span class="text-white font-semibold text-lg pr-4">Como funciona suporte quando dá problema?</span>
-                            <span id="faq-icon-10" class="text-green-400 text-2xl">▼</span>
-                        </button>
-                        <div id="faq-content-10" class="faq-content">
-                            <div class="p-6 pt-0">
-                                <div class="border-l-4 border-green-400 border-opacity-50 pl-6">
-                                    <p class="text-gray-200 leading-relaxed">Modelo Tradicional: SLA 2h para problemas críticos, 8h para não-críticos. Modelo Parceria: SLA 8h para críticos, 24h para outros. Suporte via chat, email e telefone. Monitoramento 24/7 com alertas automáticos de performance.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button onclick="toggleFAQ(11)" class="w-full text-left p-6 bg-green-400 bg-opacity-5 hover:bg-opacity-10 transition-all duration-300 flex justify-between items-center border border-green-400 border-opacity-20 rounded-xl">
-                            <span class="text-white font-semibold text-lg pr-4">Cada prefeitura pode personalizar o sistema?</span>
-                            <span id="faq-icon-11" class="text-green-400 text-2xl">▼</span>
-                        </button>
-                        <div id="faq-content-11" class="faq-content">
-                            <div class="p-6 pt-0">
-                                <div class="border-l-4 border-green-400 border-opacity-50 pl-6">
-                                    <p class="text-gray-200 leading-relaxed">Sim. Cada município opera isoladamente e pode: personalizar templates de planos, ajustar metodologias pedagógicas, incluir projetos locais, configurar aprovações hierárquicas. A IA se adapta ao "jeito" de cada rede municipal ensinar.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Partnership FAQ -->
-            <div id="faq-partnership" class="faq-category glassmorphism rounded-2xl p-8">
-                <h3 class="text-2xl font-semibold text-green-400 mb-8">Parceria</h3>
-                <div class="space-y-4">
-                    <div class="faq-item">
-                        <button onclick="toggleFAQ(12)" class="w-full text-left p-6 bg-green-400 bg-opacity-5 hover:bg-opacity-10 transition-all duration-300 flex justify-between items-center border border-green-400 border-opacity-20 rounded-xl">
-                            <span class="text-white font-semibold text-lg pr-4">Posso trocar de modelo depois?</span>
-                            <span id="faq-icon-12" class="text-green-400 text-2xl">▼</span>
-                        </button>
-                        <div id="faq-content-12" class="faq-content">
-                            <div class="p-6 pt-0">
-                                <div class="border-l-4 border-green-400 border-opacity-50 pl-6">
-                                    <p class="text-gray-200 leading-relaxed">Modelo Parceria → Tradicional: Sim, pagando diferença do investimento e ajustando SLA. Tradicional → Parceria: Não faz sentido comercial, pois você já teria propriedade total. A migração preserve todos os dados e configurações.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button onclick="toggleFAQ(13)" class="w-full text-left p-6 bg-green-400 bg-opacity-5 hover:bg-opacity-10 transition-all duration-300 flex justify-between items-center border border-green-400 border-opacity-20 rounded-xl">
-                            <span class="text-white font-semibold text-lg pr-4">Vocês vão querer vender direto depois?</span>
-                            <span id="faq-icon-13" class="text-green-400 text-2xl">▼</span>
-                        </button>
-                        <div id="faq-content-13" class="faq-content">
-                            <div class="p-6 pt-0">
-                                <div class="border-l-4 border-green-400 border-opacity-50 pl-6">
-                                    <p class="text-gray-200 leading-relaxed">Não. Contrato inclui cláusula de exclusividade territorial. Nosso foco é tecnologia e desenvolvimento, não relacionamento comercial com prefeituras. Você tem o network e experiência em licitações - somos complementares, não concorrentes.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button onclick="toggleFAQ(14)" class="w-full text-left p-6 bg-green-400 bg-opacity-5 hover:bg-opacity-10 transition-all duration-300 flex justify-between items-center border border-green-400 border-opacity-20 rounded-xl">
-                            <span class="text-white font-semibold text-lg pr-4">Como fica participação se eu expandir para outros estados?</span>
-                            <span id="faq-icon-14" class="text-green-400 text-2xl">▼</span>
-                        </button>
-                        <div id="faq-content-14" class="faq-content">
-                            <div class="p-6 pt-0">
-                                <div class="border-l-4 border-green-400 border-opacity-50 pl-6">
-                                    <p class="text-gray-200 leading-relaxed">A participação (15%) se mantém sobre todos os contratos, independente da localização. Sistema suporta expansão nacional ilimitada. Quanto maior sua operação, mais todos ganham. É um incentivo ao crescimento agressivo.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button onclick="toggleFAQ(15)" class="w-full text-left p-6 bg-green-400 bg-opacity-5 hover:bg-opacity-10 transition-all duration-300 flex justify-between items-center border border-green-400 border-opacity-20 rounded-xl">
-                            <span class="text-white font-semibold text-lg pr-4">Os 15% são sobre receita bruta ou líquida?</span>
-                            <span id="faq-icon-15" class="text-green-400 text-2xl">▼</span>
-                        </button>
-                        <div id="faq-content-15" class="faq-content">
-                            <div class="p-6 pt-0">
-                                <div class="border-l-4 border-green-400 border-opacity-50 pl-6">
-                                    <p class="text-gray-200 leading-relaxed">Receita bruta do contrato com a prefeitura. Transparência total - você reporta o valor fechado, aplicamos 15%. Sem desconto de impostos, comissões ou outros custos. Simplicidade e clareza na parceria.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Closing -->
-    <section id="closing" class="py-20 relative z-10">
-        <div class="max-w-7xl mx-auto px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-white mb-6">Momento de Decisão Estratégica</h2>
-                <div class="w-24 h-1 bg-green-400 mx-auto"></div>
-            </div>
-
-            <div class="glassmorphism rounded-2xl p-8 max-w-4xl mx-auto">
-                <h3 class="text-2xl font-semibold text-green-400 mb-6 text-center">
-                    A Decisão é Estratégica, Não Emocional
-                </h3>
-                <p class="text-gray-200 leading-relaxed text-center mb-8">
-                    Como empresários experientes, sabemos que timing de mercado é tudo. A janela para ser pioneiro em IA educacional está aberta agora. A questão não é se essa tecnologia vai dominar o mercado - é quando, e se você quer estar na frente ou correndo atrás.
-                </p>
-                
-                <div class="text-center">
-                    <div class="inline-flex items-center space-x-2 bg-green-400 bg-opacity-20 px-6 py-3 rounded-full">
-                        <span class="text-green-400 font-semibold">
-                            A oportunidade está apresentada. A escolha é sua.
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <script>
-        // Model switcher
-        function showModel(model) {
-            // Hide all models
-            document.querySelectorAll('.model-section').forEach(section => {
-                section.classList.remove('active');
-            });
-            // Remove active class from all buttons
-            document.querySelectorAll('[id^="btn-"]').forEach(btn => {
-                btn.classList.remove('bg-green-400', 'bg-opacity-20', 'text-green-400', 'border', 'border-green-400', 'border-opacity-50');
-                btn.classList.add('text-gray-400', 'hover:text-white');
-            });
-            
-            // Show selected model
-            document.getElementById('model-' + model).classList.add('active');
-            // Activate selected button
-            const activeBtn = document.getElementById('btn-' + model);
-            activeBtn.classList.remove('text-gray-400', 'hover:text-white');
-            activeBtn.classList.add('bg-green-400', 'bg-opacity-20', 'text-green-400', 'border', 'border-green-400', 'border-opacity-50');
-        }
-
-        // FAQ Category switcher
-        function showFAQCategory(category) {
-            // Hide all FAQ categories
-            document.querySelectorAll('.faq-category').forEach(cat => {
-                cat.classList.remove('active');
-            });
-            // Remove active class from all FAQ buttons
-            document.querySelectorAll('[id^="faq-btn-"]').forEach(btn => {
-                btn.classList.remove('bg-green-400', 'bg-opacity-20', 'text-green-400', 'border', 'border-green-400', 'border-opacity-50');
-                btn.classList.add('text-gray-400', 'hover:text-white', 'glassmorphism');
-            });
-            
-            // Show selected category
-            document.getElementById('faq-' + category).classList.add('active');
-            // Activate selected button
-            const activeBtn = document.getElementById('faq-btn-' + category);
-            activeBtn.classList.remove('text-gray-400', 'hover:text-white', 'glassmorphism');
-            activeBtn.classList.add('bg-green-400', 'bg-opacity-20', 'text-green-400', 'border', 'border-green-400', 'border-opacity-50');
-        }
-
-        // FAQ toggle
-        function toggleFAQ(index) {
-            const content = document.getElementById('faq-content-' + index);
-            const icon = document.getElementById('faq-icon-' + index);
-            
-            if (content.classList.contains('open')) {
-                content.classList.remove('open');
-                icon.style.transform = 'rotate(0deg)';
-            } else {
-                content.classList.add('open');
-                icon.style.transform = 'rotate(180deg)';
-            }
-        }
-    </script>
+    <div class="py-20 text-center text-green-400 relative z-10">
+        <p>Landing page sendo construída em partes...</p>
+        <p>Acesse: https://froggerr10.github.io/bncc-landing-page em alguns minutos</p>
+    </div>
 </body>
 </html>
