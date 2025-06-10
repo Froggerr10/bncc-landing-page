@@ -28,6 +28,15 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(75, 255, 165, 0.2);
         }
+        .gradient-text {
+            background: linear-gradient(135deg, #ffffff 0%, #4bffa5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            transition: all 0.3s ease;
+        }
     </style>
 </head>
 <body>
@@ -46,13 +55,63 @@
                     </div>
                     <div class="text-heading text-lg font-bold tracking-wider">ALIACODE</div>
                 </div>
+                <nav class="hidden lg:flex space-x-6">
+                    <a href="#hero" class="text-body hover:text-primary transition-colors">Início</a>
+                    <a href="#context" class="text-body hover:text-primary transition-colors">Mercado</a>
+                    <a href="#solution" class="text-body hover:text-primary transition-colors">Solução</a>
+                    <a href="#investment" class="text-body hover:text-primary transition-colors">Investimento</a>
+                    <a href="#faq" class="text-body hover:text-primary transition-colors">FAQ</a>
+                </nav>
             </div>
         </header>
 
-        <!-- Conteúdo será adicionado nas próximas partes -->
-        <div class="pt-32 pb-20 text-center">
-            <h1 class="text-4xl font-bold text-heading mb-4">Landing Page BNCC IA</h1>
-            <p class="text-primary">Estrutura básica carregada - adicionando conteúdo...</p>
+        <!-- Hero -->
+        <section id="hero" class="min-h-screen flex items-center justify-center relative pt-20">
+            <div class="absolute inset-0 opacity-30">
+                <img src="./professor_ai" alt="Profissional trabalhando com IA" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+            </div>
+            <div class="max-w-7xl mx-auto px-8 text-center relative z-10">
+                <div class="glass px-6 py-3 rounded-full inline-block mb-8">
+                    <span class="text-primary text-sm font-medium">Liberdade através da IA na Educação</span>
+                </div>
+                
+                <h1 class="text-6xl lg:text-7xl font-bold mb-8 gradient-text leading-tight">
+                    Plataforma de IA para<br>
+                    <span class="text-primary">Planos de Aula BNCC</span>
+                </h1>
+                
+                <p class="text-xl text-body leading-relaxed max-w-4xl mx-auto mb-12">
+                    Análise de oportunidade estratégica para expansão no mercado educacional. 
+                    Uma solução que otimiza o tempo dos professores enquanto garante alinhamento 
+                    total com a Base Nacional Comum Curricular.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
+                    <div class="glass rounded-xl p-6 hover-lift">
+                        <h3 class="text-heading font-semibold mb-2">Tempo é Valor</h3>
+                        <p class="text-body text-sm">Professores economizam horas na criação de planos</p>
+                    </div>
+                    <div class="glass rounded-xl p-6 hover-lift">
+                        <h3 class="text-heading font-semibold mb-2">BNCC Nativo</h3>
+                        <p class="text-body text-sm">API dedicada garantindo alinhamento total</p>
+                    </div>
+                    <div class="glass rounded-xl p-6 hover-lift">
+                        <h3 class="text-heading font-semibold mb-2">Segurança Total</h3>
+                        <p class="text-body text-sm">LGPD-ready com infraestrutura corporativa</p>
+                    </div>
+                </div>
+
+                <button onclick="document.getElementById('context').scrollIntoView({behavior: 'smooth'})" 
+                        class="bg-primary text-black px-10 py-4 rounded-xl font-semibold text-lg hover:scale-105 transition-all duration-300 shadow-lg">
+                    Explorar Oportunidade
+                </button>
+            </div>
+        </section>
+
+        <!-- Próximas seções serão adicionadas -->
+        <div id="context" class="py-20 text-center">
+            <p class="text-primary">Próxima seção: Contexto de Mercado será adicionada...</p>
         </div>
     </div>
 </body>
