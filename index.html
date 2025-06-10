@@ -30,7 +30,67 @@
         }
         
         .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-        
+        .table-responsive {
+  overflow-x: auto;
+  margin: 2em 0;
+}
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1a1d22;
+  color: #fafafa;
+  font-size: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  min-width: 700px;
+}
+.styled-table th, .styled-table td {
+  padding: 0.9em 1em;
+  border: 1px solid #23272e;
+  text-align: left;
+}
+.styled-table thead {
+  background: #23272e;
+}
+.styled-table tbody tr:nth-child(even) {
+  background: #20232a;
+}
+.styled-table tbody tr.highlight {
+  background: #242a36;
+  font-weight: bold;
+  color: #4bffa5;
+}
+.styled-table th {
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+@media (max-width: 900px) {
+  .styled-table, .styled-table thead, .styled-table tbody, .styled-table th, .styled-table td, .styled-table tr {
+    display: block;
+  }
+  .styled-table th {
+    position: sticky;
+    top: 0;
+    background: #23272e;
+    z-index: 2;
+  }
+  .styled-table td {
+    border: none;
+    border-bottom: 1px solid #23272e;
+    position: relative;
+    padding-left: 50%;
+  }
+  .styled-table td:before {
+    position: absolute;
+    left: 1em;
+    top: 0.9em;
+    width: 45%;
+    white-space: nowrap;
+    color: #aaa;
+    font-weight: bold;
+    content: attr(data-label);
+  }
+}
         /* Header */
         header {
             position: fixed;
@@ -348,62 +408,62 @@
       O mercado educacional brasileiro é composto por mais de 2 milhões de professores e milhares de redes públicas e privadas, todos pressionados a entregar planos de aula cada vez mais alinhados à BNCC (Base Nacional Comum Curricular). Porém, a elaboração manual desses planos consome tempo, gera inconsistências e dificulta o acompanhamento pedagógico em escala.<br><br>
       Ao analisar as soluções disponíveis, percebemos que a maioria oferece conteúdos prontos ou atividades isoladas, sem real personalização, flexibilidade ou uso de inteligência artificial. Isso abre uma enorme oportunidade para ferramentas inovadoras que entreguem automação, segurança e adaptação à realidade de cada município.
     </p>
-    <div style="overflow-x:auto;">
-      <table style="width:100%; border-collapse:collapse; margin:2em 0; background:#191919; color:#fff;">
-        <thead style="background:#232323;">
-          <tr>
-            <th>Solução</th>
-            <th>IA Conversacional</th>
-            <th>Alinhamento BNCC</th>
-            <th>Personalização</th>
-            <th>Custo Médio</th>
-            <th>Observações</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Nova Escola</td>
-            <td>❌</td>
-            <td>✅ Sim (conteúdo fixo)</td>
-            <td>❌</td>
-            <td>Gratuito</td>
-            <td>Planos prontos, sem IA, sem edição inteligente.</td>
-          </tr>
-          <tr>
-            <td>Escribo</td>
-            <td>❌</td>
-            <td>✅ Parcial</td>
-            <td>❌</td>
-            <td>Sob consulta</td>
-            <td>Foco em atividades, não planos completos.</td>
-          </tr>
-          <tr>
-            <td>Aprende Brasil (Positivo)</td>
-            <td>❌</td>
-            <td>✅ Sim (fechado)</td>
-            <td>✅ Parcial</td>
-            <td>R$ 150.000+</td>
-            <td>Material proprietário, alto custo, baixa flexibilidade.</td>
-          </tr>
-          <tr>
-            <td>Sponte / Sistemas de Ensino</td>
-            <td>❌</td>
-            <td>✅ Parcial</td>
-            <td>❌</td>
-            <td>R$ 80.000 a R$ 180.000</td>
-            <td>Material fechado, sem IA, foco em escolas privadas.</td>
-          </tr>
-          <tr style="background:rgba(75,255,165,0.15); font-weight:bold;">
-            <td>Nossa Plataforma<br><small>(BNCC Intelligence)</small></td>
-            <td>✅ Sim – IA Generativa</td>
-            <td>✅ Sim – com API própria</td>
-            <td>✅ Totalmente configurável</td>
-            <td>R$ 90.000 a R$ 130.000</td>
-            <td>IA conversacional, coautoria, escalável, integrável com sistemas legados.</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <div class="table-responsive">
+  <table class="styled-table">
+    <thead>
+      <tr>
+        <th>Solução</th>
+        <th>IA Conversacional</th>
+        <th>Alinhamento BNCC</th>
+        <th>Personalização</th>
+        <th>Custo Médio</th>
+        <th>Observações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Solução">Nova Escola</td>
+        <td data-label="IA Conversacional">❌</td>
+        <td data-label="Alinhamento BNCC">✅ Sim (conteúdo fixo)</td>
+        <td data-label="Personalização">❌</td>
+        <td data-label="Custo Médio">Gratuito</td>
+        <td data-label="Observações">Planos prontos, sem IA, sem edição inteligente.</td>
+      </tr>
+      <tr>
+        <td data-label="Solução">Escribo</td>
+        <td data-label="IA Conversacional">❌</td>
+        <td data-label="Alinhamento BNCC">✅ Parcial</td>
+        <td data-label="Personalização">❌</td>
+        <td data-label="Custo Médio">Sob consulta</td>
+        <td data-label="Observações">Foco em atividades, não planos completos.</td>
+      </tr>
+      <tr>
+        <td data-label="Solução">Aprende Brasil (Positivo)</td>
+        <td data-label="IA Conversacional">❌</td>
+        <td data-label="Alinhamento BNCC">✅ Sim (fechado)</td>
+        <td data-label="Personalização">✅ Parcial</td>
+        <td data-label="Custo Médio">R$ 150.000+</td>
+        <td data-label="Observações">Material proprietário, alto custo, baixa flexibilidade.</td>
+      </tr>
+      <tr>
+        <td data-label="Solução">Sponte / Sistemas de Ensino</td>
+        <td data-label="IA Conversacional">❌</td>
+        <td data-label="Alinhamento BNCC">✅ Parcial</td>
+        <td data-label="Personalização">❌</td>
+        <td data-label="Custo Médio">R$ 80.000 a R$ 180.000</td>
+        <td data-label="Observações">Material fechado, sem IA, foco em escolas privadas.</td>
+      </tr>
+      <tr class="highlight">
+        <td data-label="Solução">Nossa Plataforma<br><small>(BNCC Intelligence)</small></td>
+        <td data-label="IA Conversacional">✅ Sim – IA Generativa</td>
+        <td data-label="Alinhamento BNCC">✅ Sim – com API própria</td>
+        <td data-label="Personalização">✅ Totalmente configurável</td>
+        <td data-label="Custo Médio">R$ 90.000 a R$ 130.000</td>
+        <td data-label="Observações">IA conversacional, coautoria, escalável, integrável com sistemas legados.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
     <p style="color:#bbb; font-size:0.95em;">
       <em>Apenas a nossa solução une IA conversacional, personalização total por município e integração flexível, tornando-se a escolha mais avançada e competitiva do mercado.</em>
     </p>
