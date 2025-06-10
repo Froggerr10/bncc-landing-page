@@ -5,14 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plataforma de IA para Planos de Aula BNCC</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { 
+            background-color: #101010;
+            background-image: url('./Fundo_verde.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .bg-overlay { 
+            background-color: rgba(16, 16, 16, 0.85);
+            min-height: 100vh;
+        }
+        .text-primary { color: #4bffa5; }
+        .text-heading { color: #ffffff; }
+        .text-body { color: #bbbbbb; }
+        .text-link { color: #eeeeee; }
+        .bg-primary { background-color: #4bffa5; }
+        .border-primary { border-color: #4bffa5; }
+        .glass {
+            background: rgba(16, 16, 16, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(75, 255, 165, 0.2);
+        }
+    </style>
 </head>
-<body class="bg-gray-900 text-white">
-    <div class="min-h-screen bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900">
-        <div class="text-center py-20">
-            <h1 class="text-4xl font-bold text-white mb-4">
-                Landing Page BNCC IA
-            </h1>
-            <p class="text-green-400">Carregando conteúdo completo...</p>
+<body>
+    <div class="bg-overlay">
+        <!-- Header -->
+        <header class="fixed top-0 left-0 right-0 z-50 glass">
+            <div class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
+                <div class="flex items-center space-x-6">
+                    <div class="flex items-center space-x-3">
+                        <img src="./logo notecraft.jpg" alt="Notecraft Logo" class="w-10 h-10 rounded-lg object-cover">
+                        <span class="text-heading text-lg font-semibold">Notecraft</span>
+                    </div>
+                    <div class="flex items-center space-x-3 text-primary">
+                        <span class="text-2xl">∞</span>
+                        <span class="text-body text-sm">em parceria com</span>
+                    </div>
+                    <div class="text-heading text-lg font-bold tracking-wider">ALIACODE</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Conteúdo será adicionado nas próximas partes -->
+        <div class="pt-32 pb-20 text-center">
+            <h1 class="text-4xl font-bold text-heading mb-4">Landing Page BNCC IA</h1>
+            <p class="text-primary">Estrutura básica carregada - adicionando conteúdo...</p>
         </div>
     </div>
 </body>
