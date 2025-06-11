@@ -324,6 +324,7 @@
             .hero-cards { grid-template-columns: 1fr; }
         }
     </style>
+     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
     <div class="bg-texture"></div>
@@ -344,15 +345,17 @@
                     <span class="aliacode">ALIACODE</span>
                 </div>
                 
-                <nav>
-    <a href="#hero">Início</a>
-    <a href="#context">Mercado</a>
-    <a href="#produto">Solução</a> <!-- Corrigido -->
-    <a href="#differentials">Diferenciais</a>
-    <a href="#arquitetura">Tecnologia</a> <!-- Corrigido -->
-    <a href="#investment">Investimento</a>
-    <a href="#faq">FAQ</a>
-    <a href="#closing">Próximos Passos</a>
+             <nav>
+  <a href="#hero">Início</a>
+  <a href="#context">Mercado</a>
+  <a href="#differentials">Diferenciais</a>
+  <a href="#produto">Produto</a>
+  <a href="#arquitetura">Tecnologia</a>
+  <a href="#investment">Investimento</a>
+  <a href="#modelo-hibrido">Modelo Híbrido</a>
+  <a href="#roi">ROI</a>
+  <a href="#faq">FAQ</a>
+  <a href="#closing">Próximos Passos</a>
 </nav>
             </div>
         </div>
@@ -401,7 +404,7 @@
 <section id="context" class="section glass">
   <div class="container">
     <div class="section-header">
-      <h2>📈 Mercado</h2>
+      <h2><i data-feather="trending-up"></i> Mercado</h2>
       <div class="divider"></div>
     </div>
     <p style="color:#fff;">
@@ -423,41 +426,41 @@
     <tbody>
       <tr>
         <td data-label="Solução">Nova Escola</td>
-        <td data-label="IA Conversacional">❌</td>
-        <td data-label="Alinhamento BNCC">✅ Sim (conteúdo fixo)</td>
-        <td data-label="Personalização">❌</td>
+        <td data-label="IA Conversacional"><i data-feather="x"></i></td>
+        <td data-label="Alinhamento BNCC"><i data-feather="check"></i> Sim (conteúdo fixo)</td>
+        <td data-label="Personalização"><i data-feather="x"></i></td>
         <td data-label="Custo Médio">Gratuito</td>
         <td data-label="Observações">Planos prontos, sem IA, sem edição inteligente.</td>
       </tr>
       <tr>
         <td data-label="Solução">Escribo</td>
-        <td data-label="IA Conversacional">❌</td>
-        <td data-label="Alinhamento BNCC">✅ Parcial</td>
-        <td data-label="Personalização">❌</td>
+        <td data-label="IA Conversacional"><i data-feather="x"></i></td>
+        <td data-label="Alinhamento BNCC"><i data-feather="check"></i> Sim (conteúdo fixo)</td>
+        <td data-label="Personalização"><i data-feather="x"></i></td>
         <td data-label="Custo Médio">Sob consulta</td>
         <td data-label="Observações">Foco em atividades, não planos completos.</td>
       </tr>
       <tr>
         <td data-label="Solução">Aprende Brasil (Positivo)</td>
-        <td data-label="IA Conversacional">❌</td>
-        <td data-label="Alinhamento BNCC">✅ Sim (fechado)</td>
-        <td data-label="Personalização">✅ Parcial</td>
+        <td data-label="IA Conversacional"><i data-feather="x"></i></td>
+        <td data-label="Alinhamento BNCC"><i data-feather="check"></i> Sim (conteúdo fixo)</td>
+        <td data-label="Personalização"><i data-feather="check"></i> Sim (conteúdo fixo)</td>
         <td data-label="Custo Médio">R$ 150.000+</td>
         <td data-label="Observações">Material proprietário, alto custo, baixa flexibilidade.</td>
       </tr>
       <tr>
         <td data-label="Solução">Sponte / Sistemas de Ensino</td>
-        <td data-label="IA Conversacional">❌</td>
-        <td data-label="Alinhamento BNCC">✅ Parcial</td>
-        <td data-label="Personalização">❌</td>
+        <td data-label="IA Conversacional"><i data-feather="x"></i></td>
+        <td data-label="Alinhamento BNCC"><i data-feather="check"></i> Sim (conteúdo fixo)</td>
+        <td data-label="Personalização"><i data-feather="x"></i></td>
         <td data-label="Custo Médio">R$ 80.000 a R$ 180.000</td>
         <td data-label="Observações">Material fechado, sem IA, foco em escolas privadas.</td>
       </tr>
       <tr class="highlight">
         <td data-label="Solução">Nossa Plataforma<br><small>(BNCC Intelligence)</small></td>
-        <td data-label="IA Conversacional">✅ Sim – IA Generativa</td>
-        <td data-label="Alinhamento BNCC">✅ Sim – com API própria</td>
-        <td data-label="Personalização">✅ Totalmente configurável</td>
+        <td data-label="IA Conversacional"><i data-feather="check"></i> Sim (conteúdo fixo)</td>
+        <td data-label="Alinhamento BNCC"><i data-feather="check"></i> Sim (conteúdo fixo)</td>
+        <td data-label="Personalização"><i data-feather="check"></i> Sim (conteúdo fixo)</td>
         <td data-label="Custo Médio">R$ 90.000 a R$ 130.000</td>
         <td data-label="Observações">IA conversacional, coautoria, escalável, integrável com sistemas legados.</td>
       </tr>
@@ -468,6 +471,102 @@
       <em>Apenas a nossa solução une IA conversacional, personalização total por município e integração flexível, tornando-se a escolha mais avançada e competitiva do mercado.</em>
     </p>
   </div>
+</section>
+     <section id="differentials" class="section glass">
+    <div class="container">
+        <div class="section-header">
+            <h2>Diferenciais de Mercado</h2>
+            <div class="divider"></div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 2rem;">
+            <!-- Cards originais -->
+            <div style="background: rgba(75,255,165,0.06); border-radius: 12px; padding: 2rem;">
+                <h3 style="color:#4bffa5;"><i data-feather="cpu"></i> IA Conversacional Nativa</h3>
+                <p style="color:#fff;">Professor conversa naturalmente: "Quero ensinar frações para o 5º ano, os alunos têm dificuldade". Nossa IA entende, identifica competências BNCC e cria plano personalizado.</p>
+            </div>
+            <div style="background: rgba(75,255,165,0.06); border-radius: 12px; padding: 2rem;">
+                <h3 style="color:#4bffa5;"><i data-feather="book"></i> API BNCC Dedicada</h3>
+                <p style="color:#fff;">Mapeamos toda estrutura BNCC de forma granular. <strong style="color:#4bffa5;">100% de alinhamento garantido</strong>, sem erro humano na classificação de competências.</p>
+            </div>
+            <div style="background: rgba(75,255,165,0.06); border-radius: 12px; padding: 2rem;">
+                <h3 style="color:#4bffa5;"><i data-feather="users"></i> Coautoria Inteligente</h3>
+                <p style="color:#fff;">IA atua como coautora, não substituindo o professor. Preserva autonomia pedagógica enquanto oferece suporte técnico especializado.</p>
+            </div>
+            
+            <!-- Novos diferenciais competitivos -->
+            <div style="background: rgba(16,16,16,0.7); border: 1px solid rgba(75,255,165,0.2); border-radius: 12px; padding: 1.5rem; margin-top: 1.5rem;">
+              <h3 style="color:#4bffa5; margin-bottom:1.2rem;">Diferenciais Competitivos</h3>
+              <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+                <div style="flex:1 1 240px; min-width: 200px; max-width: 300px; background: rgba(32,32,32,0.9); border-radius: 10px; padding: 1rem; display: flex; gap: 0.75rem;">
+                  <i data-feather="users" style="font-size:1.5rem; vertical-align:middle;"></i>
+                  <span><b style="color:#4bffa5;">IA contextual</b> com coautoria pedagógica</span>
+                </div>
+                <div style="flex:1 1 240px; min-width: 200px; max-width: 300px; background: rgba(32,32,32,0.9); border-radius: 10px; padding: 1rem; display: flex; gap: 0.75rem;">
+                  <i data-feather="shield" style="font-size:1.5rem; vertical-align:middle;"></i>
+                  <span><b style="color:#4bffa5;">API própria</b> e estável da BNCC, hospedada em servidor próprio</span>
+                </div>
+                <div style="flex:1 1 240px; min-width: 200px; max-width: 300px; background: rgba(32,32,32,0.9); border-radius: 10px; padding: 1rem; display: flex; gap: 0.75rem;">
+                  <i data-feather="lock" style="font-size:1.5rem; vertical-align:middle;"></i>
+                  <span>Segurança institucional (<b style="color:#4bffa5;">LGPD</b>, backups, rastreabilidade)</span>
+                </div>
+                <div style="flex:1 1 240px; min-width: 200px; max-width: 300px; background: rgba(32,32,32,0.9); border-radius: 10px; padding: 1rem; display: flex; gap: 0.75rem;">
+                  <i data-feather="globe" style="font-size:1.5rem; vertical-align:middle;"></i>
+                  <span>Infraestrutura <b style="color:#4bffa5;">escalável</b> para redes públicas</span>
+                </div>
+                <div style="flex:1 1 240px; min-width: 200px; max-width: 300px; background: rgba(32,32,32,0.9); border-radius: 10px; padding: 1rem; display: flex; gap: 0.75rem;">
+                  <i data-feather="map" style="font-size:1.5rem; vertical-align:middle;"></i>
+                  <span>Jornada guiada <b style="color:#4bffa5;">passo a passo</b> para facilitar o uso</span>
+                </div>
+                <div style="flex:1 1 240px; min-width: 200px; max-width: 300px; background: rgba(32,32,32,0.9); border-radius: 10px; padding: 1rem; display: flex; gap: 0.75rem;">
+                  <i data-feather="edit" style="font-size:1.5rem; vertical-align:middle;"></i>
+                  <span>Edição aberta do plano com <b style="color:#4bffa5;">sugestões automáticas</b> de recursos</span>
+                </div>
+                <div style="flex:1 1 240px; min-width: 200px; max-width: 300px; background: rgba(32,32,32,0.9); border-radius: 10px; padding: 1rem; display: flex; gap: 0.75rem;">
+                  <i data-feather="trending-up" style="font-size:1.5rem; vertical-align:middle;"></i>
+                  <span>Relatórios pedagógicos <b style="color:#4bffa5;">automatizados</b> <span style="color:#bbb;">(futuro)</span></span>
+                </div>
+              </div>
+                <!-- EXEMPLO PRÁTICO (Uso em Rede Pública) -->
+              <div style="background: rgba(75,255,165,0.12); border-radius: 12px; padding: 2rem; margin-top: 1.5rem;">
+                <h3 style="color:#4bffa5; margin-bottom:1rem;">4. Exemplo Prático <span style="font-weight:normal;">(Uso em Rede Pública)</span></h3>
+                <div style="color:#fff; margin-bottom: 1rem;">
+                  <span style="font-size:1.2em;"><i data-feather="map-pin" style="vertical-align:middle;"></i> <b>Cenário:</b> Prefeitura com 1.000 Professores</span><br>
+                  <ul style="margin: 0.7em 0 0.7em 1.5em; color:#fff; font-size:1.05em;">
+                    <li>Cada professor cria <b>3 planos</b> por mês</li>
+                    <li>Para <b>2 disciplinas</b></li>
+                  </ul>
+                  <div style="margin:0.8em 0 1em 0; font-size:1.1em;">
+                    <span style="font-size:1.3em;"><i data-feather="hash"></i></span>
+                    <b>Total:</b> 6.000 planos/mês
+                  </div>
+                  <p style="margin-bottom:0.5em;">
+                    A plataforma já vem preparada com estrutura dimensionada para esse cenário — e mais — sem necessidade de refatoração, mantendo a <b>performance</b> e a <b>estabilidade da IA</b>.
+                  </p>
+                  <p>
+                    A mensalidade já inclui esse uso com <b>margem de segurança embutida</b>, permitindo crescimento progressivo.
+                  </p>
+                </div>
+              </div>
+
+              <!-- GESTÃO DE DADOS E SUPORTE -->
+              <div style="background: rgba(75,255,165,0.09); border-radius: 12px; padding: 2rem; margin-top: 1.5rem;">
+                <h3 style="color:#4bffa5; margin-bottom:1rem;"><i data-feather="tool"></i> 5. Gestão de Dados e Suporte</h3>
+                <div style="color:#fff;">
+                  <p>A plataforma registra todos os planos de forma organizada:</p>
+                  <ul style="margin-left:1.5em; color:#fff; font-size:1.05em;">
+                    <li>Por professor</li>
+                    <li>Por disciplina</li>
+                    <li>Por escola e data</li>
+                  </ul>
+                  <p style="margin-top:0.7em;">
+                    Dessa forma, se um professor reportar que <b>"perdeu um plano"</b>, o suporte poderá rapidamente localizá-lo e restaurá-lo.<br>
+                    Relatórios e métricas por rede podem ser oferecidos como <b>módulo adicional</b>.
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
 </section>
     <!-- O PRODUTO -->
 <section id="produto" class="section glass">
@@ -493,174 +592,11 @@
     </div>
   </div>
 </section>
-    <!-- Próximas Seções (após o botão Explorar Oportunidade) -->
-    <section id="investment" class="section glass">
-        <div class="container">
-            <div class="section-header">
-                <h2>Modelos de Implementação e Investimento</h2>
-                <div class="divider"></div>
-            </div>
-            <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
-                <div style="flex:1 1 320px; min-width: 320px; max-width: 400px; background: rgba(75,255,165,0.06); border-radius: 12px; padding: 2rem;">
-                    <h3 style="color: #4bffa5;">🏆 Tradicional - Premium</h3>
-                    <div style="font-size: 2rem; font-weight: bold; color: #4bffa5;">R$ 130.000</div>
-                    <p style="color: #bbb; margin-bottom: 1rem;">Pagamento único + SLA R$ 4.000/mês</p>
-                    <ul style="color: #fff; list-style: none; padding-left: 0; font-size: 1rem;">
-                        <li>100% propriedade Neo4</li>
-                        <li>Controle total sobre preços e estratégia</li>
-                        <li>100% das receitas futuras</li>
-                        <li>SLA prioritário com consultoria estratégica</li>
-                    </ul>
-                </div>
-                <div style="flex:1 1 320px; min-width: 320px; max-width: 400px; background: rgba(75,255,165,0.06); border-radius: 12px; padding: 2rem;">
-                    <h3 style="color: #4bffa5;">🤝 Parceria - Colaborativo</h3>
-                    <div style="font-size: 2rem; font-weight: bold; color: #4bffa5;">R$ 90.000</div>
-                    <p style="color: #bbb; margin-bottom: 1rem;">Em etapas + SLA R$ 4.000/mês + 15% sobre vendas</p>
-                    <ul style="color: #fff; list-style: none; padding-left: 0; font-size: 1rem;">
-                        <li>Investimento inicial 30% menor</li>
-                        <li>Validação com MVP (R$ 30k) + Completo (R$ 60k)</li>
-                        <li>Parceria técnica contínua</li>
-                        <li>Risco compartilhado entre parceiros</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section glass">
-        <div class="container">
-            <div class="section-header">
-                <h2>📊 ROI - Cenário Conservador</h2>
-                <div class="divider"></div>
-                <p style="color:#bbb; margin-top:1rem;">
-                    Considerando contratos de apenas <span style="color:#4bffa5; font-weight:bold;">R$ 120k por prefeitura</span> (valor bem conservador):
-                </p>
-            </div>
-            <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
-                <div style="background: rgba(75,255,165,0.08); border-radius: 12px; padding: 1.5rem 2rem; min-width: 200px; text-align: center;">
-                    <div style="font-size:2rem; color:#4bffa5; font-weight:bold;">3</div>
-                    <div style="color:#4bffa5;">Prefeituras</div>
-                    <div style="color:#bbb;">R$ 360k/ano receita</div>
-                    <div style="font-weight: bold;">R$ 280k/ano lucro</div>
-                </div>
-                <div style="background: rgba(75,255,165,0.08); border-radius: 12px; padding: 1.5rem 2rem; min-width: 200px; text-align: center;">
-                    <div style="font-size:2rem; color:#4bffa5; font-weight:bold;">5</div>
-                    <div style="color:#4bffa5;">Prefeituras</div>
-                    <div style="color:#bbb;">R$ 600k/ano receita</div>
-                    <div style="font-weight: bold;">R$ 500k/ano lucro</div>
-                </div>
-                <div style="background: rgba(75,255,165,0.08); border-radius: 12px; padding: 1.5rem 2rem; min-width: 200px; text-align: center;">
-                    <div style="font-size:2rem; color:#4bffa5; font-weight:bold;">10</div>
-                    <div style="color:#4bffa5;">Prefeituras</div>
-                    <div style="color:#bbb;">R$ 1.200k/ano receita</div>
-                    <div style="font-weight: bold;">R$ 1.080k/ano lucro</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="differentials" class="section glass">
-    <div class="container">
-        <div class="section-header">
-            <h2>Diferenciais de Mercado</h2>
-            <div class="divider"></div>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 2rem;">
-            <!-- Cards originais -->
-            <div style="background: rgba(75,255,165,0.06); border-radius: 12px; padding: 2rem;">
-                <h3 style="color:#4bffa5;">🤖 IA Conversacional Nativa</h3>
-                <p style="color:#fff;">Professor conversa naturalmente: "Quero ensinar frações para o 5º ano, os alunos têm dificuldade". Nossa IA entende, identifica competências BNCC e cria plano personalizado.</p>
-            </div>
-            <div style="background: rgba(75,255,165,0.06); border-radius: 12px; padding: 2rem;">
-                <h3 style="color:#4bffa5;">📚 API BNCC Dedicada</h3>
-                <p style="color:#fff;">Mapeamos toda estrutura BNCC de forma granular. <strong style="color:#4bffa5;">100% de alinhamento garantido</strong>, sem erro humano na classificação de competências.</p>
-            </div>
-            <div style="background: rgba(75,255,165,0.06); border-radius: 12px; padding: 2rem;">
-                <h3 style="color:#4bffa5;">👥 Coautoria Inteligente</h3>
-                <p style="color:#fff;">IA atua como coautora, não substituindo o professor. Preserva autonomia pedagógica enquanto oferece suporte técnico especializado.</p>
-            </div>
-            
-            <!-- Novos diferenciais competitivos -->
-            <div style="background: rgba(16,16,16,0.7); border: 1px solid rgba(75,255,165,0.2); border-radius: 12px; padding: 1.5rem; margin-top: 1.5rem;">
-              <h3 style="color:#4bffa5; margin-bottom:1.2rem;">Diferenciais Competitivos</h3>
-              <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-                <div style="flex:1 1 240px; min-width: 200px; max-width: 300px; background: rgba(32,32,32,0.9); border-radius: 10px; padding: 1rem; display: flex; gap: 0.75rem;">
-                  <span style="font-size:1.5rem;">🤝</span>
-                  <span><b style="color:#4bffa5;">IA contextual</b> com coautoria pedagógica</span>
-                </div>
-                <div style="flex:1 1 240px; min-width: 200px; max-width: 300px; background: rgba(32,32,32,0.9); border-radius: 10px; padding: 1rem; display: flex; gap: 0.75rem;">
-                  <span style="font-size:1.5rem;">🛡️</span>
-                  <span><b style="color:#4bffa5;">API própria</b> e estável da BNCC, hospedada em servidor próprio</span>
-                </div>
-                <div style="flex:1 1 240px; min-width: 200px; max-width: 300px; background: rgba(32,32,32,0.9); border-radius: 10px; padding: 1rem; display: flex; gap: 0.75rem;">
-                  <span style="font-size:1.5rem;">🔒</span>
-                  <span>Segurança institucional (<b style="color:#4bffa5;">LGPD</b>, backups, rastreabilidade)</span>
-                </div>
-                <div style="flex:1 1 240px; min-width: 200px; max-width: 300px; background: rgba(32,32,32,0.9); border-radius: 10px; padding: 1rem; display: flex; gap: 0.75rem;">
-                  <span style="font-size:1.5rem;">🌐</span>
-                  <span>Infraestrutura <b style="color:#4bffa5;">escalável</b> para redes públicas</span>
-                </div>
-                <div style="flex:1 1 240px; min-width: 200px; max-width: 300px; background: rgba(32,32,32,0.9); border-radius: 10px; padding: 1rem; display: flex; gap: 0.75rem;">
-                  <span style="font-size:1.5rem;">🗺️</span>
-                  <span>Jornada guiada <b style="color:#4bffa5;">passo a passo</b> para facilitar o uso</span>
-                </div>
-                <div style="flex:1 1 240px; min-width: 200px; max-width: 300px; background: rgba(32,32,32,0.9); border-radius: 10px; padding: 1rem; display: flex; gap: 0.75rem;">
-                  <span style="font-size:1.5rem;">✏️</span>
-                  <span>Edição aberta do plano com <b style="color:#4bffa5;">sugestões automáticas</b> de recursos</span>
-                </div>
-                <div style="flex:1 1 240px; min-width: 200px; max-width: 300px; background: rgba(32,32,32,0.9); border-radius: 10px; padding: 1rem; display: flex; gap: 0.75rem;">
-                  <span style="font-size:1.5rem;">📈</span>
-                  <span>Relatórios pedagógicos <b style="color:#4bffa5;">automatizados</b> <span style="color:#bbb;">(futuro)</span></span>
-                </div>
-              </div>
-                <!-- EXEMPLO PRÁTICO (Uso em Rede Pública) -->
-              <div style="background: rgba(75,255,165,0.12); border-radius: 12px; padding: 2rem; margin-top: 1.5rem;">
-                <h3 style="color:#4bffa5; margin-bottom:1rem;">4. Exemplo Prático <span style="font-weight:normal;">(Uso em Rede Pública)</span></h3>
-                <div style="color:#fff; margin-bottom: 1rem;">
-                  <span style="font-size:1.2em;">📍 <b>Cenário:</b> Prefeitura com 1.000 Professores</span><br>
-                  <ul style="margin: 0.7em 0 0.7em 1.5em; color:#fff; font-size:1.05em;">
-                    <li>Cada professor cria <b>3 planos</b> por mês</li>
-                    <li>Para <b>2 disciplinas</b></li>
-                  </ul>
-                  <div style="margin:0.8em 0 1em 0; font-size:1.1em;">
-                    <span style="font-size:1.3em;">🔢</span>
-                    <b>Total:</b> 6.000 planos/mês
-                  </div>
-                  <p style="margin-bottom:0.5em;">
-                    A plataforma já vem preparada com estrutura dimensionada para esse cenário — e mais — sem necessidade de refatoração, mantendo a <b>performance</b> e a <b>estabilidade da IA</b>.
-                  </p>
-                  <p>
-                    A mensalidade já inclui esse uso com <b>margem de segurança embutida</b>, permitindo crescimento progressivo.
-                  </p>
-                </div>
-              </div>
-
-              <!-- GESTÃO DE DADOS E SUPORTE -->
-              <div style="background: rgba(75,255,165,0.09); border-radius: 12px; padding: 2rem; margin-top: 1.5rem;">
-                <h3 style="color:#4bffa5; margin-bottom:1rem;">🛠️ 5. Gestão de Dados e Suporte</h3>
-                <div style="color:#fff;">
-                  <p>A plataforma registra todos os planos de forma organizada:</p>
-                  <ul style="margin-left:1.5em; color:#fff; font-size:1.05em;">
-                    <li>Por professor</li>
-                    <li>Por disciplina</li>
-                    <li>Por escola e data</li>
-                  </ul>
-                  <p style="margin-top:0.7em;">
-                    Dessa forma, se um professor reportar que <b>"perdeu um plano"</b>, o suporte poderá rapidamente localizá-lo e restaurá-lo.<br>
-                    Relatórios e métricas por rede podem ser oferecidos como <b>módulo adicional</b>.
-                  </p>
-                </div>
-              </div>
-            </div>
-        </div>
-    </div>
-</section>
-
     <!-- ARQUITETURA TÉCNICA & ESCALABILIDADE -->
 <section id="arquitetura" class="section glass">
   <div class="container">
     <div class="section-header">
-      <h2>🛠️ Arquitetura Técnica & Escalabilidade</h2>
+      <h2><i data-feather="settings" style="vertical-align:middle;"></i> Arquitetura Técnica & Escalabilidade</h2>
       <div class="divider"></div>
       <p style="color:#bbb; text-align:center;">
         Estruturada para crescer junto com a sua rede. Veja como garantimos robustez desde o MVP até a fase final.
@@ -693,12 +629,44 @@
     </div>
   </div>
 </section>
-
+    <!-- Próximas Seções (após o botão Explorar Oportunidade) -->
+    <section id="investment" class="section glass">
+        <div class="container">
+            <div class="section-header">
+                <h2>Modelos de Implementação e Investimento</h2>
+                <div class="divider"></div>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
+                <div style="flex:1 1 320px; min-width: 320px; max-width: 400px; background: rgba(75,255,165,0.06); border-radius: 12px; padding: 2rem;">
+                    <h3 style="color: #4bffa5;"><i data-feather="award" style="vertical-align:middle;"></i> Tradicional - Premium</h3>
+                    <div style="font-size: 2rem; font-weight: bold; color: #4bffa5;">R$ 130.000</div>
+                    <p style="color: #bbb; margin-bottom: 1rem;">Pagamento único + SLA R$ 4.000/mês</p>
+                    <ul style="color: #fff; list-style: none; padding-left: 0; font-size: 1rem;">
+                        <li>100% propriedade Neo4</li>
+                        <li>Controle total sobre preços e estratégia</li>
+                        <li>100% das receitas futuras</li>
+                        <li>SLA prioritário com consultoria estratégica</li>
+                    </ul>
+                </div>
+                <div style="flex:1 1 320px; min-width: 320px; max-width: 400px; background: rgba(75,255,165,0.06); border-radius: 12px; padding: 2rem;">
+                    <h3 style="color: #4bffa5;"><i data-feather="users"></i> Parceria - Colaborativo</h3>
+                    <div style="font-size: 2rem; font-weight: bold; color: #4bffa5;">R$ 90.000</div>
+                    <p style="color: #bbb; margin-bottom: 1rem;">Em etapas + SLA R$ 4.000/mês + 15% sobre vendas</p>
+                    <ul style="color: #fff; list-style: none; padding-left: 0; font-size: 1rem;">
+                        <li>Investimento inicial 30% menor</li>
+                        <li>Validação com MVP (R$ 30k) + Completo (R$ 60k)</li>
+                        <li>Parceria técnica contínua</li>
+                        <li>Risco compartilhado entre parceiros</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 <!-- MODELO HÍBRIDO: MVP E ESCALABILIDADE -->
 <section id="modelo-hibrido" class="section glass">
   <div class="container">
     <div class="section-header">
-      <h2>🚀 Modelo Híbrido: MVP & Escalabilidade</h2>
+     <h2><i data-feather="activity"></i> Modelo Híbrido: MVP & Escalabilidade</h2>
       <div class="divider"></div>
     </div>
     <div style="display: flex; flex-wrap:wrap; gap:1.2rem; justify-content:center;">
@@ -727,12 +695,43 @@
     </div>
   </div>
 </section>
+    <section id="roi" class="section glass">
+        <div class="container">
+            <div class="section-header">
+                <h2><i data-feather="bar-chart"></i> ROI - Cenário Conservador</h2>
+                <div class="divider"></div>
+                <p style="color:#bbb; margin-top:1rem;">
+                    Considerando contratos de apenas <span style="color:#4bffa5; font-weight:bold;">R$ 120k por prefeitura</span> (valor bem conservador):
+                </p>
+            </div>
+            <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
+                <div style="background: rgba(75,255,165,0.08); border-radius: 12px; padding: 1.5rem 2rem; min-width: 200px; text-align: center;">
+                    <div style="font-size:2rem; color:#4bffa5; font-weight:bold;">3</div>
+                    <div style="color:#4bffa5;">Prefeituras</div>
+                    <div style="color:#bbb;">R$ 360k/ano receita</div>
+                    <div style="font-weight: bold;">R$ 280k/ano lucro</div>
+                </div>
+                <div style="background: rgba(75,255,165,0.08); border-radius: 12px; padding: 1.5rem 2rem; min-width: 200px; text-align: center;">
+                    <div style="font-size:2rem; color:#4bffa5; font-weight:bold;">5</div>
+                    <div style="color:#4bffa5;">Prefeituras</div>
+                    <div style="color:#bbb;">R$ 600k/ano receita</div>
+                    <div style="font-weight: bold;">R$ 500k/ano lucro</div>
+                </div>
+                <div style="background: rgba(75,255,165,0.08); border-radius: 12px; padding: 1.5rem 2rem; min-width: 200px; text-align: center;">
+                    <div style="font-size:2rem; color:#4bffa5; font-weight:bold;">10</div>
+                    <div style="color:#4bffa5;">Prefeituras</div>
+                    <div style="color:#bbb;">R$ 1.200k/ano receita</div>
+                    <div style="font-weight: bold;">R$ 1.080k/ano lucro</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 <!-- FAQ – Dúvidas que Podem Surgir -->
 <section id="faq" class="section glass">
   <div class="container">
     <div class="section-header">
-      <h2>❓ 7. FAQ – Dúvidas que Podem Surgir</h2>
+      <h2><i data-feather="help-circle"></i> 7. FAQ – Dúvidas que Podem Surgir</h2>
       <div class="divider"></div>
       <p style="color:#bbb; text-align:center; margin-bottom:2rem;">
         Aqui respondemos as dúvidas mais comuns dos gestores públicos sobre adoção da nossa plataforma.
@@ -740,7 +739,7 @@
     </div>
 
     <!-- Financeiras -->
-    <h3 style="color:#ffd600; margin-top:2rem;">💰 Financeiras</h3>
+    <h3 style="color:#ffd600; margin-top:2rem;"><i data-feather="dollar-sign"></i> Financeiras</h3>
     <div style="display: flex; flex-direction: column; gap: 1.2rem; margin-bottom:1.8rem;">
       <div style="background: rgba(255,255,0,0.08); border-radius: 10px; padding: 1.2rem;">
         <b>Se eu vender para uma Prefeitua a R$ 80 mil ainda compensa?</b>
@@ -769,7 +768,7 @@
     </div>
 
     <!-- Riscos -->
-    <h3 style="color:#ff8b8b; margin-top:2rem;">⚠️ Riscos</h3>
+    <h3 style="color:#ff8b8b; margin-top:2rem;"><i data-feather="alert-triangle"></i> Riscos</h3>
     <div style="display: flex; flex-direction: column; gap: 1.2rem; margin-bottom:1.8rem;">
       <div style="background: rgba(255,0,0,0.07); border-radius: 10px; padding: 1.2rem;">
         <b>E se vocês pararem o projeto?</b>
@@ -827,7 +826,7 @@
     </div>
 
     <!-- Parceria -->
-    <h3 style="color:#bbb; margin-top:2rem;">🤝 Parceria</h3>
+    <h3 style="color:#bbb; margin-top:2rem;"><i data-feather="users"></i> Parceria</h3>
     <div style="display: flex; flex-direction: column; gap: 1.2rem;">
       <div style="background: rgba(200,200,255,0.09); border-radius: 10px; padding: 1.2rem;">
         <b>É possível trocar o modelo de parceria para tradicional depois?</b>
@@ -863,7 +862,7 @@
     <section id="closing" class="section glass">
         <div class="container">
             <div class="section-header">
-                <h2 style="color: #4bffa5;">⚡ Momento de Decisão Estratégica</h2>
+                <h2 style="color: #4bffa5;"><i data-feather="zap"></i> Momento de Decisão Estratégica</h2>
                 <div class="divider"></div>
             </div>
             <p style="font-size: 1.2rem; color: #bbb; text-align:center; margin-bottom: 2rem;">
@@ -876,8 +875,8 @@
             </p>
             <div style="background: rgba(75,255,165,0.18); padding: 1.5rem 2rem; border-radius: 15px; text-align: center;">
                 <span style="font-size: 1.3rem; font-weight: bold; color: #4bffa5;">
-                    🚀 A oportunidade está apresentada. A escolha é sua.
-                </span>
+    <i data-feather="activity" style="vertical-align:middle;"></i> A oportunidade está apresentada. A escolha é sua.
+</span>
             </div>
         </div>
     </section>
@@ -894,6 +893,8 @@
             });
         });
     </script>
-
+<script>
+  feather.replace()
+</script>
 </body>
 </html>
